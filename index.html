@@ -96,69 +96,6 @@
               </h2>
             </div>
           </div>
-          
-          <!-- Franka -->
-          <div class="columns is-left" style="margin-top: 40px;">
-            <div class="content">
-              <h2 class="title is-4">1. 7-DoF Franka Collision-Free Motion</h2>
-            </div>            
-          </div>
-
-
-          <div class="columns is-centered">
-            <div class="column has-text-centered">
-              <div class="content">
-                <h2 class="title is-5">Modulation</h2>
-                <video id="sd" autoplay controls muted loop playsinline style="height: 300px;">
-                  <source src="./assets/videos/franka_modulation.mp4"
-                          type="video/mp4">
-                </video>
-              </div>
-            </div>
-
-            <div class="column has-text-centered">
-              <h2 class="title is-5">Online adaptation</h2>
-              <div class="columns is-centered">
-                <div class="column content">
-                  <video id="sd" autoplay controls muted loop playsinline style="height: 300px;">
-                    <source src="./assets/videos/franka_adapt.mp4"
-                            type="video/mp4">
-                  </video>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- SE(3) -->
-          <div class="columns is-left" style="margin-top: 40px;">
-            <div class="content">
-              <h2 class="title is-4">2. SE(3) Pouring Motion</h2>
-            </div>            
-          </div>
-          
-          <div class="columns is-centered">
-            <div class="column has-text-centered">
-              <div class="content">
-                <h2 class="title is-5">Modulation</h2>
-                <video id="sd" autoplay controls muted loop playsinline style="height: 300px;">
-                  <source src="./assets/videos/pouring_modulation_x4.mp4"
-                          type="video/mp4">
-                </video>
-              </div>
-            </div>
-
-            <div class="column has-text-centered">
-              <h2 class="title is-5">Online adaptation</h2>
-              <div class="columns is-centered">
-                <div class="column content">
-                  <video id="sd" autoplay controls muted loop playsinline style="height: 300px;">
-                    <source src="./assets/videos/Pouring_adapt.mp4"
-                            type="video/mp4">
-                  </video>
-                </div>
-              </div>
-            </div>
-          </div>
 
         </div>
       </div>
@@ -184,7 +121,7 @@
             primarily stems from MMP’s reliance on discrete-time trajectories. 
             To overcome these limitations, we introduce motion manifold
             primitives++ (MMP++), a new model that integrates the strengths
-            of bothMMP and traditional methods by incorporating parametric
+            of both MMP and traditional methods by incorporating parametric
             curve representations into the MMP framework. Furthermore, we
             identify a significant challenge with MMP++: 
             performance degradation due to geometric distortions in the latent space, meaning
@@ -202,6 +139,127 @@
         </div>
       </div>
     </div>
+</section>
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+            <!-- Image -->
+            <div class="columns is-centered" style="margin-top: 0px;">
+              <div class="content">
+                <h2 class="title is-3">Illustration of MMP++</h2>
+                <img src="assets/figures/mmp.JPG" alt="description of image" width="900"/> 
+              </div>      
+            </div>
+            
+            <div class="columns has-text-left" style="margin-top: 40px;">
+              <div class="content">
+                <h2 class="title is-5" style="color: #333333; ">
+                  <strong>Modulation:</strong> <span style="font-weight: normal;">Generated trajectories smoothly transform as the latent value \( z \) and initial and final configurations \( q_i, q_f \) change.</span>
+                  <br>
+                  <br>
+                  <strong>Online adaptation:</strong> <span style="font-weight: normal;">By adjusting the latent value \( z \) online, the robot can adapt to unseen and dynamic changes in the environment.</span>
+                </h2>
+              </div>
+            </div>
+
+            <!-- Franka -->
+            <div class="columns is-left" style="margin-top: 40px;">
+              <div class="content">
+                <h2 class="title is-4">1. 7-DoF Franka Collision-Free Motion</h2>
+              </div>            
+            </div>
+  
+  
+            <div class="columns is-centered">
+              <div class="column has-text-centered">
+                <div class="content">
+                  <h2 class="title is-5">Modulation</h2>
+                  <video id="sd" autoplay controls muted loop playsinline style="height: 300px;">
+                    <source src="./assets/videos/franka_modulation.mp4"
+                            type="video/mp4">
+                  </video>
+                </div>
+              </div>
+  
+              <div class="column has-text-centered">
+                <h2 class="title is-5">Online adaptation</h2>
+                <div class="columns is-centered">
+                  <div class="column content">
+                    <video id="sd" autoplay controls muted loop playsinline style="height: 300px;">
+                      <source src="./assets/videos/franka_adapt.mp4"
+                              type="video/mp4">
+                    </video>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <!-- SE(3) -->
+            <div class="columns is-left" style="margin-top: 40px;">
+              <div class="content">
+                <h2 class="title is-4">2. SE(3) Pouring Motion</h2>
+              </div>            
+            </div>
+            
+            <div class="columns is-centered">
+              <div class="column has-text-centered">
+                <div class="content">
+                  <h2 class="title is-5">Modulation</h2>
+                  <video id="sd" autoplay controls muted loop playsinline style="height: 300px;">
+                    <source src="./assets/videos/pouring_modulation_x4.mp4"
+                            type="video/mp4">
+                  </video>
+                </div>
+              </div>
+  
+              <div class="column has-text-centered">
+                <h2 class="title is-5">Online adaptation</h2>
+                <div class="columns is-centered">
+                  <div class="column content">
+                    <video id="sd" autoplay controls muted loop playsinline style="height: 300px;">
+                      <source src="./assets/videos/Pouring_adapt.mp4"
+                              type="video/mp4">
+                    </video>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+            <!-- Image -->
+            <div class="columns is-centered" style="margin-top: 0px;">
+              <div class="content">
+                <h2 class="title is-3">Geometric Distortion in MMP++</h2>
+              </div>      
+            </div>
+            
+            <!-- TL;DR. -->
+            <div class="columns is-centered has-text-justified interpolation-panel" 
+               style="max-width: 1000px; background-color: #333333;">
+            <div class="column is-full-width has-text-centered">
+              <h2 class="title is-4" style="color: #f5f5f5;">
+                Coming soon
+              </h2>
+            </div>
+          </div>
+            
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
 <!-- Citation. -->
