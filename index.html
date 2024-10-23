@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>MMP++</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.svg">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+
+<body>
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          
+          <!-- Title. -->
+          <h1 class="title is-2 publication-title">MMP++: Motion Manifold Primitives with Parametric Curve Models</h1>
+          <p class="subtitle">IEEE Transactions on Robotics (T-RO 2024)</p>
+          
+          <!-- Authors. -->
+          <div class="is-size-5 publication-authors">
+            </span>
+            <span class="author-block">
+              <a href="https://www.gabe-yhlee.com">Yonghyeon Lee</a>,
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">Korea Institute For Advanced Study</span>
+          </div>
+
+          <!-- Icons. -->
+          <div class="column has-text-centered">
+            <div class="publication-links">
+
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="https://ieeexplore.ieee.org/document/10637485"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/Gabe-YHLee/MMPpp-public"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+
+            </div>
+          </div>
+          
+          <!-- Blank. -->
+          <div class="columns is-centered">
+            <div class="content">
+              <h2 class="title is-3"></h2>
+            </div>            
+          </div>
+
+          <!-- TL;DR. -->
+          <div class="columns is-centered has-text-justified interpolation-panel" 
+               style="max-width: 1000px; background-color: #f5f5f5;">
+            <div class="column is-full-width">
+              <h2 class="title is-5" style="color: #333333;">
+                  TL;DR: MMP++, a manifold-based
+                  approach for encoding basic motion skills, can produce diverse
+                  trajectories, enabling the system to adapt to 
+                  unseen dynamic changes in environments.
+              </h2>
+            </div>
+          </div>
+          
+          <!-- Franka -->
+          <div class="columns is-left" style="margin-top: 40px;">
+            <div class="content">
+              <h2 class="title is-4">1. 7-DoF Franka Collision-Free Motion</h2>
+            </div>            
+          </div>
+
+
+          <div class="columns is-centered">
+            <div class="column has-text-centered">
+              <div class="content">
+                <h2 class="title is-5">Modulation</h2>
+                <video id="sd" autoplay controls muted loop playsinline style="height: 300px;">
+                  <source src="./assets/videos/franka_modulation.mp4"
+                          type="video/mp4">
+                </video>
+              </div>
+            </div>
+
+            <div class="column has-text-centered">
+              <h2 class="title is-5">Online adaptation</h2>
+              <div class="columns is-centered">
+                <div class="column content">
+                  <video id="sd" autoplay controls muted loop playsinline style="height: 300px;">
+                    <source src="./assets/videos/franka_adapt.mp4"
+                            type="video/mp4">
+                  </video>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- SE(3) -->
+          <div class="columns is-left" style="margin-top: 40px;">
+            <div class="content">
+              <h2 class="title is-4">2. SE(3) Pouring Motion</h2>
+            </div>            
+          </div>
+          
+          <div class="columns is-centered">
+            <div class="column has-text-centered">
+              <div class="content">
+                <h2 class="title is-5">Modulation</h2>
+                <video id="sd" autoplay controls muted loop playsinline style="height: 300px;">
+                  <source src="./assets/videos/pouring_modulation_x4.mp4"
+                          type="video/mp4">
+                </video>
+              </div>
+            </div>
+
+            <div class="column has-text-centered">
+              <h2 class="title is-5">Online adaptation</h2>
+              <div class="columns is-centered">
+                <div class="column content">
+                  <video id="sd" autoplay controls muted loop playsinline style="height: 300px;">
+                    <source src="./assets/videos/Pouring_adapt.mp4"
+                            type="video/mp4">
+                  </video>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Motion manifold primitives (MMP), a manifold-based
+            approach for encoding basic motion skills, can produce diverse
+            trajectories, enabling the system to adapt to unseen constraints.
+            Nonetheless, we argue that current MMP models lack crucial
+            functionalities of movement primitives, such as temporal and viapoints modulation, 
+            found in traditional approaches. This shortfall
+            primarily stems from MMP’s reliance on discrete-time trajectories. 
+            To overcome these limitations, we introduce motion manifold
+            primitives++ (MMP++), a new model that integrates the strengths
+            of bothMMP and traditional methods by incorporating parametric
+            curve representations into the MMP framework. Furthermore, we
+            identify a significant challenge with MMP++: 
+            performance degradation due to geometric distortions in the latent space, meaning
+            that similar motions are not closely positioned. To address this,
+            isometric motion manifold primitives++ (IMMP++) is proposed to
+            ensure the latent space accurately preserves the manifold’s geometry. 
+            Our experimental results across various applications, including
+            two-DoF planar motions, seven-DoF robot arm motions, and SE(3)
+            trajectory planning, show that MMP++ and IMMP++ outperform
+            existing methods in trajectory generation tasks, 
+            achieving substantial improvements in some cases. Moreover, they enable the
+            modulation of latent coordinates and via-points, thereby allowing
+            efficient online adaptation to dynamic environments.
+          </p>
+        </div>
+      </div>
+    </div>
+</section>
+
+<!-- Citation. -->
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title is-3">Citation</h2>
+    <pre><code>
+@ARTICLE{10637485,
+author={Lee, Yonghyeon},
+journal={IEEE Transactions on Robotics}, 
+title={MMP++: Motion Manifold Primitives With Parametric Curve Models}, 
+year={2024},
+volume={40},
+number={},
+pages={3950-3963},
+keywords={Trajectory;Manifolds;Task analysis;Adaptation models;Robot kinematics;Modulation;Measurement;Autoencoders;isometric representation learning;manifold;movement primitives;Riemannian geometry},
+doi={10.1109/TRO.2024.3444068}}
+    </code></pre>
+  </div>
+</section>
+
+<!-- Footer. -->
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <p>
+        Website template modified from <a href="https://nerfies.github.io/">NeRFies</a>.
+      </p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
