@@ -184,164 +184,167 @@
     </div>
 </section>
 
-<section class="hero">
-  <div class="hero-body">
-    <div class="container is-max-desktop">
-      <div class="columns is-centered">
-        <div class="column has-text-centered">
-            <!-- Image -->
-            <div class="columns is-centered" style="margin-top: 0px;">
-              <div class="content">
-                <h2 class="title is-3">Illustration of MMP++</h2>
-                <img src="assets/figures/mmp.JPG" alt="description of image" width="900"/> 
-              </div>      
+<section class="section">
+  <div class="container is-max-desktop">
+
+    <div class="columns is-centered">
+      <div class="column has-text-centered">
+          <!-- Image -->
+          <div class="columns is-centered" style="margin-top: 0px;">
+            <div class="content">
+              <h2 class="title is-3">Illustration of MMP++</h2>
+              <img src="assets/figures/mmp.JPG" alt="description of image" width="900"/> 
+            </div>      
+          </div>
+          
+          <div class="columns has-text-left" style="margin-top: 40px;">
+            <div class="content">
+              <h2 class="title is-5" style="color: #333333; ">
+                <strong>Modulation:</strong> <span style="font-weight: normal;">Generated trajectories smoothly transform as the latent value \( z \) and initial and final configurations \( q_i, q_f \) change.</span>
+                <br>
+                <br>
+                <strong>Online adaptation:</strong> <span style="font-weight: normal;">By adjusting the latent value \( z \) online, the robot can adapt to unseen and dynamic changes in the environment.</span>
+              </h2>
             </div>
-            
-            <div class="columns has-text-left" style="margin-top: 40px;">
+          </div>
+
+          <!-- Franka -->
+          <div class="columns is-left" style="margin-top: 40px;">
+            <div class="content">
+              <h2 class="title is-4">1. 7-DoF Franka Collision-Free Motion</h2>
+            </div>            
+          </div>
+
+          <div class="columns is-centered">
+            <div class="column has-text-centered">
               <div class="content">
-                <h2 class="title is-5" style="color: #333333; ">
-                  <strong>Modulation:</strong> <span style="font-weight: normal;">Generated trajectories smoothly transform as the latent value \( z \) and initial and final configurations \( q_i, q_f \) change.</span>
-                  <br>
-                  <br>
-                  <strong>Online adaptation:</strong> <span style="font-weight: normal;">By adjusting the latent value \( z \) online, the robot can adapt to unseen and dynamic changes in the environment.</span>
-                </h2>
+                <h2 class="title is-5">Modulation</h2>
+                <video id="sd" autoplay controls muted loop playsinline style="height: 300px;">
+                  <source src="./assets/videos/franka_modulation.mp4"
+                          type="video/mp4">
+                </video>
               </div>
             </div>
 
-            <!-- Franka -->
-            <div class="columns is-left" style="margin-top: 40px;">
-              <div class="content">
-                <h2 class="title is-4">1. 7-DoF Franka Collision-Free Motion</h2>
-              </div>            
-            </div>
-  
-  
-            <div class="columns is-centered">
-              <div class="column has-text-centered">
-                <div class="content">
-                  <h2 class="title is-5">Modulation</h2>
+            <div class="column has-text-centered">
+              <h2 class="title is-5">Online adaptation</h2>
+              <div class="columns is-centered">
+                <div class="column content">
                   <video id="sd" autoplay controls muted loop playsinline style="height: 300px;">
-                    <source src="./assets/videos/franka_modulation.mp4"
+                    <source src="./assets/videos/franka_adapt.mp4"
                             type="video/mp4">
                   </video>
                 </div>
               </div>
-  
-              <div class="column has-text-centered">
-                <h2 class="title is-5">Online adaptation</h2>
-                <div class="columns is-centered">
-                  <div class="column content">
-                    <video id="sd" autoplay controls muted loop playsinline style="height: 300px;">
-                      <source src="./assets/videos/franka_adapt.mp4"
-                              type="video/mp4">
-                    </video>
-                  </div>
-                </div>
+            </div>
+          </div>
+
+          <!-- SE(3) -->
+          <div class="columns is-left" style="margin-top: 40px;">
+            <div class="content">
+              <h2 class="title is-4">2. SE(3) Pouring Motion</h2>
+            </div>            
+          </div>
+          
+          <div class="columns is-centered">
+            <div class="column has-text-centered">
+              <div class="content">
+                <h2 class="title is-5">Modulation</h2>
+                <video id="sd" autoplay controls muted loop playsinline style="height: 300px;">
+                  <source src="./assets/videos/pouring_modulation_x4.mp4"
+                          type="video/mp4">
+                </video>
               </div>
             </div>
-  
-            <!-- SE(3) -->
-            <div class="columns is-left" style="margin-top: 40px;">
-              <div class="content">
-                <h2 class="title is-4">2. SE(3) Pouring Motion</h2>
-              </div>            
-            </div>
-            
-            <div class="columns is-centered">
-              <div class="column has-text-centered">
-                <div class="content">
-                  <h2 class="title is-5">Modulation</h2>
+
+            <div class="column has-text-centered">
+              <h2 class="title is-5">Online adaptation</h2>
+              <div class="columns is-centered">
+                <div class="column content">
                   <video id="sd" autoplay controls muted loop playsinline style="height: 300px;">
-                    <source src="./assets/videos/pouring_modulation_x4.mp4"
+                    <source src="./assets/videos/Pouring_adapt.mp4"
                             type="video/mp4">
                   </video>
                 </div>
               </div>
-  
-              <div class="column has-text-centered">
-                <h2 class="title is-5">Online adaptation</h2>
-                <div class="columns is-centered">
-                  <div class="column content">
-                    <video id="sd" autoplay controls muted loop playsinline style="height: 300px;">
-                      <source src="./assets/videos/Pouring_adapt.mp4"
-                              type="video/mp4">
-                    </video>
-                  </div>
-                </div>
-              </div>
             </div>
-        </div>
+          </div>
       </div>
     </div>
   </div>
 </section>
 
 
-<section class="hero">
-  <div class="hero-body">
-    <div class="container is-max-desktop">
-      <div class="columns is-centered">
-        <div class="column has-text-centered">
-            <div class="columns is-centered" style="margin-top: 40px;">
-              <div class="content">
-                <h2 class="title is-3">Geometric Distortion in MMP++</h2>
-              </div>      
-            </div>
-            
-            <div class="column has-text-centered">
-              <div class="columns is-centered">
-                <div class="column content">
-                  <div style="margin-top: 0px;">
-                    <h2 class="title is-4">Example: MMP++ of 2D Trajectories</h2>
-                  </div>
-                  <video id="sd" autoplay controls muted loop playsinline style="width: 1000px;">
-                    <source src="./assets/videos/distortion_x2.mp4"
-                            type="video/mp4">
-                  </video>
-                  <div style="margin-top: 60px;">
-                    <h2 class="title is-4">Analogy: Geometric Distortion in World Maps</h2>
-                  </div>  
-                  <img src="assets/figures/distortion.png" alt="description of image" width="900"/> 
-                </div>
-              </div>
-            </div>
-
-          <div class="columns is-centered" style="margin-top: 80px;">
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column has-text-centered">
+          <div class="columns is-centered" style="margin-top: 0px;">
             <div class="content">
-              <h2 class="title is-3">Isometric MMP++</h2>
+              <h2 class="title is-3">Geometric Distortion in MMP++</h2>
             </div>      
           </div>
-
+          
           <div class="column has-text-centered">
             <div class="columns is-centered">
               <div class="column content">
                 <div style="margin-top: 0px;">
-                  <h2 class="title is-4">Example: Isometric MMP++ of 2D Trajectories</h2>
+                  <h2 class="title is-4">Example: MMP++ of 2D Trajectories</h2>
                 </div>
-                <img src="assets/figures/immp.png" alt="description of image" width="900"/> 
+                <video id="sd" autoplay controls muted loop playsinline style="width: 1000px;">
+                  <source src="./assets/videos/distortion_x2.mp4"
+                          type="video/mp4">
+                </video>
+                <div style="margin-top: 40px;">
+                  <h2 class="title is-4">Analogy: Geometric Distortion in World Maps</h2>
+                </div>  
+                <img src="assets/figures/distortion.png" alt="description of image" width="900"/> 
               </div>
             </div>
           </div>
-
-
-          <div class="column has-text-left">
-            <div class="columns is-left" style="margin-top: 40px;">
-              <div class="content">
-                <h2 class="title is-4">Related works (geometry-preserving autoencoders)</h2>
-                <span class="title is-5" style="color: #333333; font-weight: normal;">
-                  1. <a href="https://openreview.net/forum?id=mQxt8l7JL04">Regularized Autoencoders for Isometric Representation Learning</a> (Lee et al., 2022 ICLR)
-                  <br>
-                  2. <a href="https://proceedings.mlr.press/v202/nazari23a.html">Geometric Autoencoders - What You See is What You Decode</a> (Nazari et al., 2023 ICML)
-                  <br>
-                  3. <a href="https://proceedings.mlr.press/v235/lim24a.html">Graph Geometry-Preserving Autoencoders</a> (Lim et al., 2024 ICML)
-                </span>
-              </div>      
-            </div>
-          </div>
-
-        </div>
       </div>
     </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column has-text-centered">
+        <div class="columns is-centered" style="margin-top: 0px;">
+          <div class="content">
+            <h2 class="title is-3">Isometric MMP++</h2>
+          </div>      
+        </div>
+
+        <div class="column has-text-centered">
+          <div class="columns is-centered">
+            <div class="column content">
+              <div style="margin-top: 0px;">
+                <h2 class="title is-4">Example: Isometric MMP++ of 2D Trajectories</h2>
+              </div>
+              <img src="assets/figures/immp.png" alt="description of image" width="900"/> 
+            </div>
+          </div>
+        </div>
+
+        <div class="column has-text-left">
+          <div class="columns is-left" style="margin-top: 40px;">
+            <div class="content">
+              <h2 class="title is-4">Related works (geometry-preserving autoencoders)</h2>
+              <span class="title is-5" style="color: #333333; font-weight: normal;">
+                1. <a href="https://openreview.net/forum?id=mQxt8l7JL04">Regularized Autoencoders for Isometric Representation Learning</a> (Lee et al., 2022 ICLR)
+                <br>
+                2. <a href="https://proceedings.mlr.press/v202/nazari23a.html">Geometric Autoencoders - What You See is What You Decode</a> (Nazari et al., 2023 ICML)
+                <br>
+                3. <a href="https://proceedings.mlr.press/v235/lim24a.html">Graph Geometry-Preserving Autoencoders</a> (Lim et al., 2024 ICML)
+              </span>
+            </div>      
+          </div>
+        </div>
+      </div> 
+    </div> 
   </div>
 </section>
 
