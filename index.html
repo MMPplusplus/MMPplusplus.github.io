@@ -26,6 +26,49 @@
 
 <body>
 
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <a class="navbar-item" href="https://www.gabe-yhlee.com">
+      <span class="icon">
+          <i class="fas fa-home"></i>
+      </span>
+      </a>
+
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+          More Research
+        </a>
+        <div class="navbar-dropdown">
+          <a class="navbar-item" href="https://www.youtube.com/watch?v=I0445IET0FY">
+            MMP tutorial (ICRA 2024)
+          </a>
+          <a class="navbar-item" href="https://proceedings.mlr.press/v229/lee23a.html">
+            EMMP (CoRL 2023)
+          </a>
+          <a class="navbar-item" href="https://https://mmpplusplus.github.io/">
+            MMP++ (T-RO 2024)
+          </a>
+          <a class="navbar-item" href="https://arxiv.org/abs/2407.19681">
+            MMFP (Arxiv)
+          </a>
+          <a class="navbar-item" href="https://arxiv.org/abs/2410.12193">
+            DMMP (Arxiv)
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</nav>
+
 <section class="hero">
   <div class="hero-body">
     <div class="container is-max-desktop">
@@ -239,14 +282,12 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-            <!-- Image -->
             <div class="columns is-centered" style="margin-top: 0px;">
               <div class="content">
                 <h2 class="title is-3">Geometric Distortion in MMP++</h2>
               </div>      
             </div>
             
-            <!-- TL;DR. -->
             <div class="columns is-centered has-text-justified interpolation-panel" 
                style="max-width: 1000px; background-color: #333333;">
             <div class="column is-full-width has-text-centered">
@@ -255,7 +296,37 @@
               </h2>
             </div>
           </div>
-            
+
+          <div class="columns is-centered" style="margin-top: 40px;">
+            <div class="content">
+              <h2 class="title is-3">Isometric MMP++</h2>
+            </div>      
+          </div>
+
+          <div class="columns is-centered has-text-justified interpolation-panel" 
+               style="max-width: 1000px; background-color: #333333;">
+            <div class="column is-full-width has-text-centered">
+              <h2 class="title is-4" style="color: #f5f5f5;">
+                Coming soon
+              </h2>
+            </div>
+          </div>
+
+          <div class="column has-text-left">
+            <div class="columns is-left" style="margin-top: 40px;">
+              <div class="content">
+                <h2 class="title is-4">Related works (geometry-preserving autoencoders)</h2>
+                <span class="title is-6" style="color: #333333; font-weight: normal;">
+                  1. <a href="https://openreview.net/forum?id=mQxt8l7JL04">Regularized Autoencoders for Isometric Representation Learning</a> (Lee et al., 2022 ICLR)
+                  <br>
+                  2. <a href="https://proceedings.mlr.press/v202/nazari23a.html">Geometric Autoencoders - What You See is What You Decode</a> (Nazari et al., 2023 ICML)
+                  <br>
+                  3. <a href="https://proceedings.mlr.press/v235/lim24a.html">Graph Geometry-Preserving Autoencoders</a> (Lim et al., 2024 ICML)
+                </span>
+              </div>      
+            </div>
+          </div>
+
         </div>
       </div>
     </div>
